@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Digital Maker - Instructions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="instructions.css">
+<body>
+
+<!-- Navigation (Stays on Top) -->
+<div class="w3-top w3-bar w3-orange">
+    <div class="w3-bar-item w3-container">
+        <div class="w3-container"><img src="images/scouts-black.svg"></div>
+        <div class="w3-container"><label class="logo-text">7th Camberwell</label></div>
+    </div>
+    <a href="instructions.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Introduction</a>
+    <a href="instructions1.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 1</a>
+    <a href="instructions2.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 2</a>
+    <a href="instructions3.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 3</a>
+    <div class="w3-bar-item w3-hover-green" style="margin-top: 28px; font-weight: bold; border: solid red 2px;">Step 4</div>
+</div>
+
+<div id="home" class="w3-content">
+        <h1>Digital Maker website building</h1>
+        <p>This exercise is to satisfy requirement 2 of <a href="https://www.scouts.org.uk/staged-badges/digital-maker/stage-2">Digital Maker badge stage 2</a>, which says:</p>
+        <blockquote class="logo-text w3-padding-left">"Create a simple computer program to help with a scouting activity, and try it out."</blockquote>
+        <p>Our goal is to build a simple website which demonstrates how to tie knots. We will do this using <b>HTML</b>, (Hyper Text Markup Language") which is the standard language for creating web pages.</p>
+
+    <h2>Step three: Add a navigation bar</h2>
+    <ol>
+        <li>Open Visual Studio Code (this should have been installed on your computer before Scouts)</li>
+        <li>Click on "New File..."</li>
+        <li>Type in <code>knots.html</code> for the file name, and press enter</li>
+        <li>You should now be presented with a file explorer window. Right click, and create a new folder called <code>digital-maker</code></li>
+        <li>Double click that folder to navigate into it</li>
+        <li>Click the "Create File" button</li>
+    </ol> 
+
+    <h2>Step two: Put the "skeleton" HTML into the page</h2>
+    <p>Copy this code into the file <code>knots.html</code> which is open in Visual Studio Code:</p>
+    <div class="w3-panel" style="background-color: #ffffcc;">
+        <code>
+            &lt;!DOCTYPE html&gt;<br/>
+            &lt;html&gt;<br/>
+            &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+            &nbsp;&nbsp;&lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"&gt;<br/>
+            &nbsp;&nbsp;&lt;head&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br/>
+            &nbsp;&nbsp;&lt;/head&gt;<br/>
+            &nbsp;&nbsp;&lt;body&gt;<br/>
+            <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- The navigation bar goes here --&gt;<br/>
+            <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- This is the main body of the webpage --&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="home" class="w3-content"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;My First Heading&lt;/h1&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;My first paragraph.&lt;/p&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+            <br/>
+            &nbsp;&nbsp;&lt;/body&gt;<br/>
+            &lt;/html&gt;<br/>
+        </code>
+    </div>
+    <p>The parts of the code which define the content is contained in <b>elements</b>:</p>
+    <div class="w3-panel" style="background-color: #ccccff;">
+        <h3>What is an HTML Element?</h3>
+        <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+        <code><b>&lt;tagname&gt;</b> Content goes here... <b>&lt;/tagname&gt;</b></code>
+        <p>The HTML element is everything from the start tag to the end tag:</p>
+        <code><b>&lt;h1&gt;</b>My First Heading<b>&lt;/h1&gt;</b><br/></code>&nbsp;&nbsp;&nbsp;(h1 means a level 1 heading)<br/><br/>
+        <code><b>&lt;p&gt;</b>My first paragraph.<b>&lt;/p&gt;</b><br/></code>&nbsp;&nbsp;&nbsp;(p means a paragraph of text)
+        <p>Note: Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+    </div>
+
+</div>
+
+</body>
+</html>

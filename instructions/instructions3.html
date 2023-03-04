@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Digital Maker - Instructions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="instructions.css">
+<body>
+
+<!-- Navigation (Stays on Top) -->
+<div class="w3-top w3-bar w3-orange">
+    <div class="w3-bar-item w3-container">
+        <div class="w3-container"><img src="images/scouts-black.svg"></div>
+        <div class="w3-container"><label class="logo-text">7th Camberwell</label></div>
+    </div>
+    <a href="instructions.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Introduction</a>
+    <a href="instructions1.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 1</a>
+    <a href="instructions2.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 2</a>
+    <div class="w3-bar-item w3-hover-green" style="margin-top: 28px; font-weight: bold; border: solid red 2px;">Step 3</div>
+    <a href="instructions4.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 4</a>
+</div>
+
+<div id="home" class="w3-content">
+    <h2>Step three: Add a navigation bar</h2>
+    <h3>First, add the bar itself</h3>
+    <p>The next thing we need to do is to add a bar at the top, to allow the reader to navigate between the different knots.</p>
+    <p>To do this, replace the line in the HTML which says <code>&lt;!-- The navigation bar goes here --&gt;</code> with the following:</p>
+    <div class="w3-panel" style="background-color: #ffffcc;">
+        <code>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="w3-top w3-bar w3-black"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Links go here --&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+        </code>
+    </div>
+    <p>The <code>class="w3-top w3-bar w3-black"</code> part of this code tells the browser where to put the navigation bar, and also its colour.</codew></p>
+    <p>You can experiment with changing the colour of your bar. These are the options:</p>
+    <div class="w3-panel" style="background-color: #ccccff;">
+        <code>w3&#x2011;amber w3&#x2011;aqua w3&#x2011;blue w3&#x2011;light&#x2011;blue w3&#x2011;brown w3&#x2011;cyan w3&#x2011;blue&#x2011;grey w3&#x2011;green w3&#x2011;light&#x2011;green w3&#x2011;indigo w3&#x2011;khaki w3&#x2011;lime w3&#x2011;orange w3&#x2011;deep&#x2011;orange w3&#x2011;pink w3&#x2011;purple w3&#x2011;deep&#x2011;purple w3&#x2011;red w3&#x2011;sand w3&#x2011;teal w3&#x2011;yellow w3&#x2011;white w3&#x2011;black w3&#x2011;grey</code>
+    </div>
+    <h3>Now add the individual links</h3>
+    <p>We probably want one for the top of the page, and one for each knot we plan to add. The format for a link is as follows:</p>
+    <div class="w3-panel" style="background-color: #ffffcc;">
+        <code>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#home" class="w3-bar-item w3-button"&gt;Home&lt;/a&gt;<br/>
+        </code>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
