@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'NunitoSans-Extrabold';
+    font-family: 'NunitoSans-ExtraBold';
     src: url("fonts/NunitoSans-ExtraBold.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 .logo-text {
-    font-family: NunitoSans-Extrabold;
+    font-family: NunitoSans-ExtraBold;
     font-size: medium;
 }
 
