@@ -13,3 +13,21 @@
 #home {
     margin-top: 100px;
 }
+
+.facebook
+{
+    background-repeat: no-repeat;
+    background-position: 0% 30px;
+    background-size: 200px;
+    height: 300px;
+}
+
+.open-menu
+{
+    background-image: url('images/OpenMenu.png');
+}
+
+.saving-image-file
+{
+    background-image: url('images/SavingImageFile.png');
+}

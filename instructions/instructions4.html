@@ -19,59 +19,38 @@
     <a href="instructions2.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 2</a>
     <a href="instructions3.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 3</a>
     <div class="w3-bar-item w3-hover-green" style="margin-top: 28px; font-weight: bold; border: solid red 2px;">Step 4</div>
+    <a href="instructions5.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 5</a>
+    <a href="instructions6.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 6</a>
+    <a href="instructions7.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 7</a>
+    <a href="instructions8.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 8</a>
+    <a href="instructions9.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 9</a>
+    <a href="instructions10.html" class="w3-bar-item w3-hover-green" style="margin-top: 30px; font-weight: bold;">Step 10</a>
 </div>
 
 <div id="home" class="w3-content">
-        <h1>Digital Maker website building</h1>
-        <p>This exercise is to satisfy requirement 2 of <a href="https://www.scouts.org.uk/staged-badges/digital-maker/stage-2">Digital Maker badge stage 2</a>, which says:</p>
-        <blockquote class="logo-text w3-padding-left">"Create a simple computer program to help with a scouting activity, and try it out."</blockquote>
-        <p>Our goal is to build a simple website which demonstrates how to tie knots. We will do this using <b>HTML</b>, (Hyper Text Markup Language") which is the standard language for creating web pages.</p>
-
-    <h2>Step three: Add a navigation bar</h2>
-    <ol>
-        <li>Open Visual Studio Code (this should have been installed on your computer before Scouts)</li>
-        <li>Click on "New File..."</li>
-        <li>Type in <code>knots.html</code> for the file name, and press enter</li>
-        <li>You should now be presented with a file explorer window. Right click, and create a new folder called <code>digital-maker</code></li>
-        <li>Double click that folder to navigate into it</li>
-        <li>Click the "Create File" button</li>
-    </ol> 
-
-    <h2>Step two: Put the "skeleton" HTML into the page</h2>
-    <p>Copy this code into the file <code>knots.html</code> which is open in Visual Studio Code:</p>
+    <h2>Step four: Add a background and title</h2>
+    <h3>The title</h3>
+    <p>This is the name which appears in the tab or title bar of the browser. It is defined inside the "head" section in the html.</p>
+    <p>To change it, look at <code>&lt;title&gt;Page Title&lt;/title&gt;</code> and change "Page Title" to something else, for example "Digital Maker Knots", or your name.</p>
+    <h3>The background</h3>
+    <p>This is an image which will appear as the backdrop to the whole webpage.</p>
+    <h4>1. Find an image</h4>
+    <p>
+        First of all, find a background image you like from the internet, or take a picture with your phone and then save it into the same directory as the index.html file.<br/>
+        &nbsp;<i>If you don't know how to do this, ask Steve or the other helpers!</i>
+    </p>
+    <h4>2. Insert the image as a background in your webpage</h4>
+    <p>Next, change the <code>&lt;body&gt;</code> tag near the top of your page, to include a style. This tells the browser which image to use:</p>
     <div class="w3-panel" style="background-color: #ffffcc;">
         <code>
-            &lt;!DOCTYPE html&gt;<br/>
-            &lt;html&gt;<br/>
-            &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
-            &nbsp;&nbsp;&lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"&gt;<br/>
-            &nbsp;&nbsp;&lt;head&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br/>
-            &nbsp;&nbsp;&lt;/head&gt;<br/>
-            &nbsp;&nbsp;&lt;body&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- The navigation bar goes here --&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- This is the main body of the webpage --&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="home" class="w3-content"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;My First Heading&lt;/h1&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;My first paragraph.&lt;/p&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-            <br/>
-            &nbsp;&nbsp;&lt;/body&gt;<br/>
-            &lt;/html&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;body style="background-image: url('campfire_0.jpg');"&gt;<br/>
         </code>
     </div>
-    <p>The parts of the code which define the content is contained in <b>elements</b>:</p>
-    <div class="w3-panel" style="background-color: #ccccff;">
-        <h3>What is an HTML Element?</h3>
-        <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
-        <code><b>&lt;tagname&gt;</b> Content goes here... <b>&lt;/tagname&gt;</b></code>
-        <p>The HTML element is everything from the start tag to the end tag:</p>
-        <code><b>&lt;h1&gt;</b>My First Heading<b>&lt;/h1&gt;</b><br/></code>&nbsp;&nbsp;&nbsp;(h1 means a level 1 heading)<br/><br/>
-        <code><b>&lt;p&gt;</b>My first paragraph.<b>&lt;/p&gt;</b><br/></code>&nbsp;&nbsp;&nbsp;(p means a paragraph of text)
-        <p>Note: Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
-    </div>
+    <p>Replace <code>campfire_0.jpg</code> with the actual name of your image file.</p>
+    <img src="images/SavingImageFile.png" class="w3-round" style="width: 85%;" alt="Reef knot">
+    <h4>3. Test it out</h4>
+    <p>Save the index.html file, and then go back to your browser and hit refresh. You should now see the new page title and background image.</p>
+</div>
 
 </div>
 
