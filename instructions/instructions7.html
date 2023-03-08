@@ -30,6 +30,7 @@
 <div id="home" class="w3-content">
     <h2>Step seven: Include your photographs in the web page</h2>
 
+    <p>Copy this HTML into your page, underneath the <code>&lt;h1&gt;</code> page title line (but still inside the <code>&lt;div&gt;</code> element).</p>
     <div class="w3-panel" style="background-color: #ffffcc;">
         <code>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="reef-knot" class="w3-container w3-aqua w3-margin"&gt;<br/>
@@ -47,6 +48,30 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
         </code>
     </div>
+
+    <p>This HTML has space for four pictures and four instructions, but so far only one of them is included.<br/>
+    To add the others, you need to copy the div block<br/>
+        <code>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="w3-quarter"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="reef-knot1.jpg" class="w3-round" style="width: 85%;" alt="Reef knot 1"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;1&lt;/p&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+        </code>
+        and then paste it three more times below the first time, once for each of the other three pictures you wish to insert.<br/>
+        Then change the image source "reef-knot1.jpg" to be reef-knot2.jpg and so on up to reef-knot4.jpg.<br/>
+        Similarly, change <code>&lt;p&gt;1&lt;/p&gt;</code> to be 2, 3 and 4 in the second, third and fourth case.
+    </p>
+    <p>
+        Now, we need to look at the instruction list.<br/>
+        The <code>&lt;ol&gt;</code> ... <code>&lt;/ol&gt;</code> element represents an "ordered list", i.e. numbered bullet points 1, 2, 3, 4.<br/>
+        The <code>&lt;li&gt;</code> ... <code>&lt;/li&gt;</code> elements inside that are the individual list items.<br/>
+        So you need to copy the first <code>&lt;li&gt;</code> ... <code>&lt;/li&gt;</code> element, and add three more for instructions 2, 3 and 4.
+    </p>
+    <p>
+        Now, please replace "DESCRIBE A REEF KNOT HERE" with an explanation in your own words, saying what a reef knot is.<br/>
+        And then, replace each of the four "INSTRUCTION 1 GOES HERE" lines with a brief instruction of the stage of reef knot tying that you hafve photographed in picture 1, 2, 3 or 4.
+    </p>
+    
 </div>
 
 </div>

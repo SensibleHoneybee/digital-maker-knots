@@ -29,7 +29,8 @@
 
 <div id="home" class="w3-content">
     <h2>Step two: Put the "skeleton" HTML into the page</h2>
-    <p>Copy this code into the file <code>knots.html</code> which is open in Visual Studio Code:</p>
+    <p>Below is the HTML needed to render a whole web page, but without any content yet.</p>
+    <p>Copy this code into your file <code>index.html</code>, which you should have open in Visual Studio Code:</p>
     <div class="w3-panel" style="background-color: #ffffcc;">
         <code>
             &lt;!DOCTYPE html&gt;<br/>
@@ -37,16 +38,13 @@
             &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
             &nbsp;&nbsp;&lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"&gt;<br/>
             &nbsp;&nbsp;&lt;head&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;PAGE TITLE GOES HERE&lt;/title&gt;<br/>
             &nbsp;&nbsp;&lt;/head&gt;<br/>
             &nbsp;&nbsp;&lt;body&gt;<br/>
             <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- The navigation bar goes here --&gt;<br/>
-            <br/>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- This is the main body of the webpage --&gt;<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="home" class="w3-content" style="margin-top: 50px;"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;My First Heading&lt;/h1&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;My first paragraph.&lt;/p&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;PAGE HEADING GOES HERE&lt;/h1&gt;<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
             <br/>
             &nbsp;&nbsp;&lt;/body&gt;<br/>
@@ -54,14 +52,29 @@
         </code>
     </div>
     <div class="w3-panel" style="background-color: #ccccff;">
-        <h3>Information box: What is an HTML Element?</h3>
-        <p>The parts of the code which define the content is contained in <b>elements</b>:</p>
-        <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
-        <code><b>&lt;tagname&gt;</b> Content goes here... <b>&lt;/tagname&gt;</b></code>
-        <p>The HTML element is everything from the start tag to the end tag:</p>
-        <code><b>&lt;h1&gt;</b>My First Heading<b>&lt;/h1&gt;</b><br/></code>&nbsp;&nbsp;&nbsp;(h1 means a level 1 heading)<br/><br/>
-        <code><b>&lt;p&gt;</b>My first paragraph.<b>&lt;/p&gt;</b><br/></code>&nbsp;&nbsp;&nbsp;(p means a paragraph of text)
-        <p>Note: Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+        <h3><b>Information box:</b> What is an HTML Element?</h3>
+        <p>The parts of the HTML which define the content are called <b>elements</b>.</p>
+        <p>Most HTML elements consist of a <b>start tag</b>, some <b>content</b>, and an <b>end tag</b>.</p>
+        <ul>
+            <li>The start tag looks like this: <code><b>&lt;tagname&gt;</b></code><br/>&nbsp;(or sometimes also <code>&lt;tagname attribute1="value1" attribute2="value2"&gt;</li>code></code>)</li>
+            <li>The content goes in the between the start tag and the end tag</li>
+            <li>The end tag looks like this: <code><b>&lt;/tagname&gt;</b></code></li>
+        </ul>
+        <p>Some elements just have simple text as their content, and are usually displayed on one line. For example:</p>
+        <ul>
+            <li><code><b>&lt;h1&gt;</b>My First Heading<b>&lt;/h1&gt;</b><br/></code>&nbsp;&nbsp;&nbsp;(An h1 element is a level 1 heading)</li>
+            <li><code><b>&lt;p&gt;</b>My first paragraph.<b>&lt;/p&gt;</b><br/></code>&nbsp;&nbsp;&nbsp;(A p element is a paragraph of text)</li>
+        </ul>
+        <p>Other elements contain other elements. These are usually arranged with indentation, so elements inside other elements are easy to read. For example:</p>
+        <code>           
+            <b>&lt;body&gt;</b><br/>
+            &nbsp;&nbsp;<b>&lt;div</b> id="home" class="w3-content" style="margin-top: 50px;"<b>&gt;</b><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;h1&gt;</b>My Page Heading<b>&lt;/h1&gt;</b><br/>
+            &nbsp;&nbsp;<b>&lt;/div&gt;</b><br/>
+            &nbsp;&nbsp;<b>&lt;p&gt;</b>My first paragraph.<b>&lt;/p&gt;</b><br/>
+            <b>&lt;/body&gt;</b><br/>
+        </code>
+        <p>This is a body element, which contains a div element (with some attributes such as id, class and style) and also a p element (paragraph). Inside the div element is an h1 element (level-1 heading)</p>
     </div>
 
 </div>
